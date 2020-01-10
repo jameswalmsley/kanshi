@@ -261,7 +261,7 @@ static bool parse_float(float *dst, const char *str) {
 	if (errno != 0 || end[0] != '\0' || str[0] == '\0') {
 		return false;
 	}
-	*dst = v;
+	*dst = v * 1000.0;
 	return true;
 }
 
